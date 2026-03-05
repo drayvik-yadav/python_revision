@@ -48,8 +48,44 @@ print(name4,id(name4))
 
 
 
-Float=5.0
-print(type(Float))
+float0=5.0
+print(type(float0))
+float1=float(5)#if i'm write only 5 then id() is different but when i write 5. then varivale id() is same 
+float2=5.00
+float3=5.0000
+print(float0,id(float0))
+print(float1,id(float1))
+print(float2,id(float2))
+print(float3,id(float3))
+float4=10/5
+float5=4/2
+print(float4,id(float4))
+print(float5,id(float5))
+
+#yoep same value flot id() is same also 5.,5.0,5.00,5.000 are equal and also varible id is also same
+
+
+
+
+#garbase collaction
+status="active"
+status="close"
+
+#here reassign varible 
+#so here active in avaivale in memory but not labeled by any varible sor it delated by automatically python it's called garbase collaction
+
+
+
+
+x=[10,20,30]
+y=x
+x.append(40)
+print(y) #[10,20,30,40] how? 
+
+x1=10
+y1=x1
+x1=5
+print(y1) #10 how? because int is immutable so when i reassign x1=5 then it create new memory location for 5 and x1 point to that but y1 still point to 10
 
 
 
