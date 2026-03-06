@@ -76,3 +76,16 @@ print(bool(1))#t
 print(bool(3))#t
 print(bool(4))#T
 print(bool(5))#t
+
+print("😊")
+
+
+
+#input function 
+name=input("Enter your name: ")
+print("Hello",name,type(name))#input function always store data in str() data type even if we enter number it will be stored as string
+age=input("Enter your age: ")   
+print("Your age is",age,type(age))
+# for that we need to type cast it to int() data type
+age=int(age)
+print("Your age is",age,type(age))
